@@ -5,5 +5,15 @@ A project to detect landmark from a query image and return all the images from t
 TensorFlow
 Python
 
-#Concepts
+# Concepts
 Deep Local Features (DeLF)
+
+# Steps
+1) Install tensorflow using virtual environment
+2) Clone this repository
+3) Commands :
+cd models/research/
+export PYTHONPATH=$PYTHONPATH:`pwd`
+cd delf/delf/python/examples/
+python3 extract_features.py --config_path delf_config_example.pbtxt --list_images_path data/small_data_radhu --output_dir data/small_data_radhu_features
+
